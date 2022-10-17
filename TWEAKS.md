@@ -166,6 +166,14 @@ Again, let me be clear: if you are inexperienced or do not know what you are doi
 
 Open the sudoers file with visudo:
 
+## speed up boot time
+** experimental, unsure if this will have unintended consequences **
+
+```shell
+sudo systemctl disable armbian-hardware-optimize
+sudo systemctl diesable lightdm
+```
+
 ```shell
 # When prompted, I recommend nano, but any text editor will do
 sudo visudo
