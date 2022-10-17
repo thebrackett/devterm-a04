@@ -166,6 +166,14 @@ sudo systemctl disable armbian-hardware-optimize
 sudo systemctl diesable lightdm
 ```
 
+## make font bigger
+```shell
+sudo dpkg-reconfigure console-setup
+```
+- choose default on first two screens
+- select different font (termius, etc.)
+- choose font size
+
 ## Don't require password for `sudo` commands (NOT RECOMMENDED)
 
 This is purely because I am lazy and don't like typing out my password every time I want to run a command as root. This is _NOT_ recommended, especially if you bring your system out with you/travel/have sensitive information.
