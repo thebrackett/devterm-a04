@@ -158,14 +158,6 @@ sudo deluser temp
 sudo rm -r /home/temp
 ```
 
-## Don't require password for `sudo` commands (NOT RECOMMENDED)
-
-This is purely because I am lazy and don't like typing out my password every time I want to run a command as root. This is _NOT_ recommended, especially if you bring your system out with you/travel/have sensitive information.
-
-Again, let me be clear: if you are inexperienced or do not know what you are doing, _DO NOT_ do this. This _WILL_ make your system less secure.
-
-Open the sudoers file with visudo:
-
 ## speed up boot time
 ** experimental, unsure if this will have unintended consequences **
 
@@ -173,6 +165,14 @@ Open the sudoers file with visudo:
 sudo systemctl disable armbian-hardware-optimize
 sudo systemctl diesable lightdm
 ```
+
+## Don't require password for `sudo` commands (NOT RECOMMENDED)
+
+This is purely because I am lazy and don't like typing out my password every time I want to run a command as root. This is _NOT_ recommended, especially if you bring your system out with you/travel/have sensitive information.
+
+Again, let me be clear: if you are inexperienced or do not know what you are doing, _DO NOT_ do this. This _WILL_ make your system less secure.
+
+Open the sudoers file with visudo:
 
 ```shell
 # When prompted, I recommend nano, but any text editor will do
